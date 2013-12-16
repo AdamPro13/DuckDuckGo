@@ -1,0 +1,4 @@
+DuckDuckGo
+==========
+
+Sample DuckDuckGo app
