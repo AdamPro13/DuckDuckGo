@@ -13,8 +13,6 @@
 		50ABD8E4185E9E86001AA432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD8E2185E9E86001AA432 /* InfoPlist.strings */; };
 		50ABD8E6185E9E86001AA432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD8E5185E9E86001AA432 /* main.m */; };
 		50ABD8EA185E9E86001AA432 /* DDGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD8E9185E9E86001AA432 /* DDGAppDelegate.m */; };
-		50ABD8ED185E9E86001AA432 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD8EB185E9E86001AA432 /* Main_iPhone.storyboard */; };
-		50ABD8F0185E9E86001AA432 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD8EE185E9E86001AA432 /* Main_iPad.storyboard */; };
 		50ABD8F3185E9E86001AA432 /* DDGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD8F2185E9E86001AA432 /* DDGViewController.m */; };
 		50ABD8F5185E9E86001AA432 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD8F4185E9E86001AA432 /* Images.xcassets */; };
 		50ABD8FC185E9E86001AA432 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ABD8FB185E9E86001AA432 /* XCTest.framework */; };
@@ -22,6 +20,16 @@
 		50ABD8FE185E9E86001AA432 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ABD8DD185E9E86001AA432 /* UIKit.framework */; };
 		50ABD906185E9E86001AA432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD904185E9E86001AA432 /* InfoPlist.strings */; };
 		50ABD908185E9E86001AA432 /* DuckDuckGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD907185E9E86001AA432 /* DuckDuckGoTests.m */; };
+		50ABD913185EA16D001AA432 /* DDGBaseRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD912185EA16D001AA432 /* DDGBaseRequestHandler.m */; };
+		50ABD917185EA2A0001AA432 /* DDGQueryRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD916185EA2A0001AA432 /* DDGQueryRequestHandler.m */; };
+		50ABD923185EB5B0001AA432 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD921185EB5B0001AA432 /* Main_iPad.storyboard */; };
+		50ABD924185EB5B0001AA432 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD922185EB5B0001AA432 /* Main_iPhone.storyboard */; };
+		50ABD927185EBCDF001AA432 /* DDGRelatedTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD926185EBCDF001AA432 /* DDGRelatedTopic.m */; };
+		50ABD92A185EBD67001AA432 /* DDGSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD929185EBD67001AA432 /* DDGSearchResultsViewController.m */; };
+		50ABD92D185ECC9F001AA432 /* DDGSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD92C185ECC9F001AA432 /* DDGSearchResultCell.m */; };
+		50ABD935185EDCC8001AA432 /* DuckDuckGoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD934185EDCC8001AA432 /* DuckDuckGoIcon@2x.png */; };
+		50ABD937185EE19D001AA432 /* missingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD936185EE19D001AA432 /* missingIcon.png */; };
+		50ABD93A185F4F6E001AA432 /* DDGTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD939185F4F6E001AA432 /* DDGTopic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +53,6 @@
 		50ABD8E7185E9E86001AA432 /* DuckDuckGo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DuckDuckGo-Prefix.pch"; sourceTree = "<group>"; };
 		50ABD8E8185E9E86001AA432 /* DDGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGAppDelegate.h; sourceTree = "<group>"; };
 		50ABD8E9185E9E86001AA432 /* DDGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGAppDelegate.m; sourceTree = "<group>"; };
-		50ABD8EC185E9E86001AA432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		50ABD8EF185E9E86001AA432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		50ABD8F1185E9E86001AA432 /* DDGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGViewController.h; sourceTree = "<group>"; };
 		50ABD8F2185E9E86001AA432 /* DDGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGViewController.m; sourceTree = "<group>"; };
 		50ABD8F4185E9E86001AA432 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +61,22 @@
 		50ABD903185E9E86001AA432 /* DuckDuckGoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DuckDuckGoTests-Info.plist"; sourceTree = "<group>"; };
 		50ABD905185E9E86001AA432 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50ABD907185E9E86001AA432 /* DuckDuckGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckDuckGoTests.m; sourceTree = "<group>"; };
+		50ABD911185EA16D001AA432 /* DDGBaseRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGBaseRequestHandler.h; sourceTree = "<group>"; };
+		50ABD912185EA16D001AA432 /* DDGBaseRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGBaseRequestHandler.m; sourceTree = "<group>"; };
+		50ABD915185EA2A0001AA432 /* DDGQueryRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGQueryRequestHandler.h; sourceTree = "<group>"; };
+		50ABD916185EA2A0001AA432 /* DDGQueryRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGQueryRequestHandler.m; sourceTree = "<group>"; };
+		50ABD921185EB5B0001AA432 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		50ABD922185EB5B0001AA432 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		50ABD925185EBCDF001AA432 /* DDGRelatedTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGRelatedTopic.h; sourceTree = "<group>"; };
+		50ABD926185EBCDF001AA432 /* DDGRelatedTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGRelatedTopic.m; sourceTree = "<group>"; };
+		50ABD928185EBD67001AA432 /* DDGSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGSearchResultsViewController.h; sourceTree = "<group>"; };
+		50ABD929185EBD67001AA432 /* DDGSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGSearchResultsViewController.m; sourceTree = "<group>"; };
+		50ABD92B185ECC9F001AA432 /* DDGSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGSearchResultCell.h; sourceTree = "<group>"; };
+		50ABD92C185ECC9F001AA432 /* DDGSearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGSearchResultCell.m; sourceTree = "<group>"; };
+		50ABD934185EDCC8001AA432 /* DuckDuckGoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DuckDuckGoIcon@2x.png"; sourceTree = "<group>"; };
+		50ABD936185EE19D001AA432 /* missingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missingIcon.png; sourceTree = "<group>"; };
+		50ABD938185F4F6E001AA432 /* DDGTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGTopic.h; sourceTree = "<group>"; };
+		50ABD939185F4F6E001AA432 /* DDGTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGTopic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +138,12 @@
 			children = (
 				50ABD8E8185E9E86001AA432 /* DDGAppDelegate.h */,
 				50ABD8E9185E9E86001AA432 /* DDGAppDelegate.m */,
-				50ABD8EB185E9E86001AA432 /* Main_iPhone.storyboard */,
-				50ABD8EE185E9E86001AA432 /* Main_iPad.storyboard */,
+				50ABD921185EB5B0001AA432 /* Main_iPad.storyboard */,
+				50ABD922185EB5B0001AA432 /* Main_iPhone.storyboard */,
+				50ABD914185EA177001AA432 /* Request Handlers */,
 				50ABD8F1185E9E86001AA432 /* DDGViewController.h */,
 				50ABD8F2185E9E86001AA432 /* DDGViewController.m */,
+				50ABD92E185ECCA7001AA432 /* Search Results */,
 				50ABD8F4185E9E86001AA432 /* Images.xcassets */,
 				50ABD8E0185E9E86001AA432 /* Supporting Files */,
 			);
@@ -129,6 +153,12 @@
 		50ABD8E0185E9E86001AA432 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50ABD936185EE19D001AA432 /* missingIcon.png */,
+				50ABD934185EDCC8001AA432 /* DuckDuckGoIcon@2x.png */,
+				50ABD938185F4F6E001AA432 /* DDGTopic.h */,
+				50ABD939185F4F6E001AA432 /* DDGTopic.m */,
+				50ABD925185EBCDF001AA432 /* DDGRelatedTopic.h */,
+				50ABD926185EBCDF001AA432 /* DDGRelatedTopic.m */,
 				50ABD8E1185E9E86001AA432 /* DuckDuckGo-Info.plist */,
 				50ABD8E2185E9E86001AA432 /* InfoPlist.strings */,
 				50ABD8E5185E9E86001AA432 /* main.m */,
@@ -153,6 +183,28 @@
 				50ABD904185E9E86001AA432 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50ABD914185EA177001AA432 /* Request Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				50ABD911185EA16D001AA432 /* DDGBaseRequestHandler.h */,
+				50ABD912185EA16D001AA432 /* DDGBaseRequestHandler.m */,
+				50ABD915185EA2A0001AA432 /* DDGQueryRequestHandler.h */,
+				50ABD916185EA2A0001AA432 /* DDGQueryRequestHandler.m */,
+			);
+			name = "Request Handlers";
+			sourceTree = "<group>";
+		};
+		50ABD92E185ECCA7001AA432 /* Search Results */ = {
+			isa = PBXGroup;
+			children = (
+				50ABD928185EBD67001AA432 /* DDGSearchResultsViewController.h */,
+				50ABD929185EBD67001AA432 /* DDGSearchResultsViewController.m */,
+				50ABD92B185ECC9F001AA432 /* DDGSearchResultCell.h */,
+				50ABD92C185ECC9F001AA432 /* DDGSearchResultCell.m */,
+			);
+			name = "Search Results";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +284,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50ABD8F0185E9E86001AA432 /* Main_iPad.storyboard in Resources */,
+				50ABD924185EB5B0001AA432 /* Main_iPhone.storyboard in Resources */,
+				50ABD935185EDCC8001AA432 /* DuckDuckGoIcon@2x.png in Resources */,
+				50ABD923185EB5B0001AA432 /* Main_iPad.storyboard in Resources */,
 				50ABD8F5185E9E86001AA432 /* Images.xcassets in Resources */,
-				50ABD8ED185E9E86001AA432 /* Main_iPhone.storyboard in Resources */,
 				50ABD8E4185E9E86001AA432 /* InfoPlist.strings in Resources */,
+				50ABD937185EE19D001AA432 /* missingIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +311,12 @@
 				50ABD8EA185E9E86001AA432 /* DDGAppDelegate.m in Sources */,
 				50ABD8F3185E9E86001AA432 /* DDGViewController.m in Sources */,
 				50ABD8E6185E9E86001AA432 /* main.m in Sources */,
+				50ABD913185EA16D001AA432 /* DDGBaseRequestHandler.m in Sources */,
+				50ABD93A185F4F6E001AA432 /* DDGTopic.m in Sources */,
+				50ABD92D185ECC9F001AA432 /* DDGSearchResultCell.m in Sources */,
+				50ABD92A185EBD67001AA432 /* DDGSearchResultsViewController.m in Sources */,
+				50ABD917185EA2A0001AA432 /* DDGQueryRequestHandler.m in Sources */,
+				50ABD927185EBCDF001AA432 /* DDGRelatedTopic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,22 +345,6 @@
 				50ABD8E3185E9E86001AA432 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		50ABD8EB185E9E86001AA432 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50ABD8EC185E9E86001AA432 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		50ABD8EE185E9E86001AA432 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50ABD8EF185E9E86001AA432 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		50ABD904185E9E86001AA432 /* InfoPlist.strings */ = {
@@ -391,7 +435,6 @@
 		50ABD90C185E9E86001AA432 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DuckDuckGo/DuckDuckGo-Prefix.pch";
@@ -404,7 +447,6 @@
 		50ABD90D185E9E86001AA432 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DuckDuckGo/DuckDuckGo-Prefix.pch";
@@ -475,6 +517,7 @@
 				50ABD90D185E9E86001AA432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50ABD90E185E9E86001AA432 /* Build configuration list for PBXNativeTarget "DuckDuckGoTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +526,7 @@
 				50ABD910185E9E86001AA432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

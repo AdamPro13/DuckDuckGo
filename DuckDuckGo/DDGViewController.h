@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DDGViewController : UIViewController
+@interface DDGViewController : UIViewController <UITextFieldDelegate>
+
+@property (strong, nonatomic) IBOutlet UIButton *goButton;
+@property (strong, nonatomic) IBOutlet UITextField *searchTextField;
 
 @end
