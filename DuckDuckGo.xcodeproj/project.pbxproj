@@ -30,6 +30,8 @@
 		50ABD935185EDCC8001AA432 /* DuckDuckGoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD934185EDCC8001AA432 /* DuckDuckGoIcon@2x.png */; };
 		50ABD937185EE19D001AA432 /* missingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50ABD936185EE19D001AA432 /* missingIcon.png */; };
 		50ABD93A185F4F6E001AA432 /* DDGTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD939185F4F6E001AA432 /* DDGTopic.m */; };
+		50ABD93D185F8FED001AA432 /* DDGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD93C185F8FED001AA432 /* DDGDetailViewController.m */; };
+		50ABD941185FA5FC001AA432 /* DDGTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD940185FA5FC001AA432 /* DDGTopicCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		50ABD936185EE19D001AA432 /* missingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missingIcon.png; sourceTree = "<group>"; };
 		50ABD938185F4F6E001AA432 /* DDGTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGTopic.h; sourceTree = "<group>"; };
 		50ABD939185F4F6E001AA432 /* DDGTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGTopic.m; sourceTree = "<group>"; };
+		50ABD93B185F8FED001AA432 /* DDGDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGDetailViewController.h; sourceTree = "<group>"; };
+		50ABD93C185F8FED001AA432 /* DDGDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGDetailViewController.m; sourceTree = "<group>"; };
+		50ABD93F185FA5FC001AA432 /* DDGTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGTopicCell.h; sourceTree = "<group>"; };
+		50ABD940185FA5FC001AA432 /* DDGTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGTopicCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 				50ABD8F1185E9E86001AA432 /* DDGViewController.h */,
 				50ABD8F2185E9E86001AA432 /* DDGViewController.m */,
 				50ABD92E185ECCA7001AA432 /* Search Results */,
+				50ABD93E185F9010001AA432 /* DetailsView */,
 				50ABD8F4185E9E86001AA432 /* Images.xcassets */,
 				50ABD8E0185E9E86001AA432 /* Supporting Files */,
 			);
@@ -201,10 +208,21 @@
 			children = (
 				50ABD928185EBD67001AA432 /* DDGSearchResultsViewController.h */,
 				50ABD929185EBD67001AA432 /* DDGSearchResultsViewController.m */,
+				50ABD93F185FA5FC001AA432 /* DDGTopicCell.h */,
+				50ABD940185FA5FC001AA432 /* DDGTopicCell.m */,
 				50ABD92B185ECC9F001AA432 /* DDGSearchResultCell.h */,
 				50ABD92C185ECC9F001AA432 /* DDGSearchResultCell.m */,
 			);
 			name = "Search Results";
+			sourceTree = "<group>";
+		};
+		50ABD93E185F9010001AA432 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				50ABD93B185F8FED001AA432 /* DDGDetailViewController.h */,
+				50ABD93C185F8FED001AA432 /* DDGDetailViewController.m */,
+			);
+			name = DetailsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50ABD941185FA5FC001AA432 /* DDGTopicCell.m in Sources */,
 				50ABD8EA185E9E86001AA432 /* DDGAppDelegate.m in Sources */,
 				50ABD8F3185E9E86001AA432 /* DDGViewController.m in Sources */,
 				50ABD8E6185E9E86001AA432 /* main.m in Sources */,
@@ -315,6 +334,7 @@
 				50ABD93A185F4F6E001AA432 /* DDGTopic.m in Sources */,
 				50ABD92D185ECC9F001AA432 /* DDGSearchResultCell.m in Sources */,
 				50ABD92A185EBD67001AA432 /* DDGSearchResultsViewController.m in Sources */,
+				50ABD93D185F8FED001AA432 /* DDGDetailViewController.m in Sources */,
 				50ABD917185EA2A0001AA432 /* DDGQueryRequestHandler.m in Sources */,
 				50ABD927185EBCDF001AA432 /* DDGRelatedTopic.m in Sources */,
 			);

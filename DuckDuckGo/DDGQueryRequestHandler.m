@@ -33,7 +33,7 @@
         NSMutableArray *results = [[NSMutableArray alloc] init];
         
         for (NSDictionary *resultDict in resultsDictionary)
-        {   
+        {
             if ([resultDict valueForKey:@"Text"])
             {
                 DDGRelatedTopic *topic = [self parseResultDictionary:resultDict];

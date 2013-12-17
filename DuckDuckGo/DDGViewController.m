@@ -48,7 +48,6 @@
     DDGSearchResultsViewController *destination = segue.destinationViewController;
     destination.searchString = self.searchTextField.text;
     destination.handler = [DDGQueryRequestHandler queryHandlerForSender:destination forString:self.searchTextField.text];
-    [destination.handler sendRequest];
 }
 
 @end

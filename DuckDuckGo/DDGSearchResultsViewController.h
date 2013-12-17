@@ -14,5 +14,6 @@
 @property (nonatomic, strong) DDGQueryRequestHandler *handler;
 @property (nonatomic, strong) NSString *searchString;
 @property (nonatomic, strong) NSArray *searchResults;
+@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
 
 @end

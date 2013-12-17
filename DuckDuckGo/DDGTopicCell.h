@@ -1,5 +1,5 @@
 //
-//  DDGSearchResultCell.h
+//  DDGTopicCell.h
 //  DuckDuckGo
 //
 //  Created by Adam Proschek on 12/16/13.
@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DDGRelatedTopic.h"
+#import "DDGTopic.h"
 
-@interface DDGSearchResultCell : UITableViewCell
+@interface DDGTopicCell : UITableViewCell
 
-@property (strong, nonatomic) DDGRelatedTopic *topic;
-@property (strong, nonatomic) IBOutlet UIImageView *icon;
+@property (strong, nonatomic) DDGTopic *topic;
 @property (strong, nonatomic) IBOutlet UILabel *textLabel;
 
 @end

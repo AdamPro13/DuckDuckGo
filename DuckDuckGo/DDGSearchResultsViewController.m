@@ -8,8 +8,10 @@
 
 #import "DDGSearchResultsViewController.h"
 #import "DDGSearchResultCell.h"
+#import "DDGTopicCell.h"
 #import "DDGRelatedTopic.h"
 #import "DDGTopic.h"
+#import "DDGDetailViewController.h"
 
 @interface DDGSearchResultsViewController ()
 
@@ -29,12 +31,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    if (!self.searchResults)
+    {
+        [self.handler sendRequest];
+        
+        [self addIndicatorView];
+    }
+    
     self.navigationItem.title = self.searchString;
 }
 
@@ -78,21 +85,23 @@
             cell.icon.image = topic.image;
         }
         
-        cell.textView.text = topic.text;
+        cell.topic = topic;
+        cell.textLabel.text = topic.text;
         
         return cell;
     }
     else if ([[self.searchResults objectAtIndex:indexPath.row] isKindOfClass:[DDGTopic class]])
     {
         static NSString *CellIdentifier = @"TopicCell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        DDGTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
         if (cell == nil)
         {
-            cell = [[UITableViewCell alloc] init];
+            cell = [[DDGTopicCell alloc] init];
         }
         
         DDGTopic *topic = [self.searchResults objectAtIndex:indexPath.row];
+        cell.topic = topic;
         cell.textLabel.text = [NSString stringWithFormat:@"%@ (%lu)",topic.name, (unsigned long)[topic.topics count]];
         
         return cell;
@@ -111,16 +120,57 @@
     }
 }
 
+#pragma mark - Table View Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO animated:YES];
+    
+    if ([[tableView cellForRowAtIndexPath:indexPath] isKindOfClass:[DDGTopicCell class]])
+    {
+        DDGTopicCell *cell = (DDGTopicCell *)[tableView cellForRowAtIndexPath:indexPath];
+        DDGSearchResultsViewController *resultsView = [[DDGSearchResultsViewController alloc] init];
+        resultsView.searchString = cell.topic.name;
+        resultsView.searchResults = cell.topic.topics;
+        
+        [self.navigationController pushViewController:resultsView animated:YES];
+    }
+}
+
+#pragma mark - Request Delegate
+
 - (void)requestEndedWithData:(id)data andRequest:(NSString *)request
 {
+    [self.indicatorView stopAnimating];
     if ([data isKindOfClass:[NSArray class]])
-    {
-        NSLog(@"Nav item: %@", self.navigationItem);
-        NSLog(@"Nav controller: %@", self.navigationController.navigationBar);
-        
+    {   
         self.searchResults = data;
         [self.tableView reloadData];
     }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[DDGDetailViewController class]])
+    {
+        DDGDetailViewController *destination = segue.destinationViewController;
+        DDGSearchResultCell *cell = sender;
+        destination.topic = cell.topic;
+    }
+}
+
+- (void)addIndicatorView
+{
+    self.indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    self.indicatorView.color = [UIColor redColor];
+    self.indicatorView.backgroundColor = [UIColor darkGrayColor];
+    CGFloat centerX = (self.view.frame.origin.x + self.view.frame.size.width - self.indicatorView.frame.size.width)/2.0;
+    CGFloat centerY = (self.view.frame.origin.y + self.view.frame.size.height - self.indicatorView.frame.size.height)/2.0;
+    CGRect newPosition = CGRectMake(centerX, centerY, self.indicatorView.frame.size.width, self.indicatorView.frame.size.height);
+    self.indicatorView.frame = newPosition;
+    [self.view addSubview:self.indicatorView];
+    
+    [self.indicatorView startAnimating];
 }
 
 - (void)customizeAppearance
