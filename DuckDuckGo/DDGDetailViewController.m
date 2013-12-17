@@ -31,7 +31,15 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.imageView.image = self.topic.image;
+    if (self.topic.image == nil)
+    {
+        self.imageView.image = [UIImage imageNamed:@"missingIcon.png"];
+    }
+    else
+    {
+        self.imageView.image = self.topic.image;
+    }
+    
     self.detailTextView.text = self.topic.text;
 }
 

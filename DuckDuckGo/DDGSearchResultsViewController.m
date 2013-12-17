@@ -163,7 +163,6 @@
 {
     self.indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     self.indicatorView.color = [UIColor redColor];
-    self.indicatorView.backgroundColor = [UIColor darkGrayColor];
     CGFloat centerX = (self.view.frame.origin.x + self.view.frame.size.width - self.indicatorView.frame.size.width)/2.0;
     CGFloat centerY = (self.view.frame.origin.y + self.view.frame.size.height - self.indicatorView.frame.size.height)/2.0;
     CGRect newPosition = CGRectMake(centerX, centerY, self.indicatorView.frame.size.width, self.indicatorView.frame.size.height);

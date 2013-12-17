@@ -84,7 +84,7 @@
         <!--Search Results View Controller - Title-->
         <scene sceneID="F8X-1e-Jlg">
             <objects>
-                <tableViewController id="vDw-YT-Bhk" customClass="DDGSearchResultsViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ResultsView" id="vDw-YT-Bhk" customClass="DDGSearchResultsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="8ML-ca-8X9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,22 +166,18 @@
                                 <rect key="frame" x="20" y="163" width="280" height="385"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aNv-k1-Mcy" firstAttribute="top" secondItem="ruv-eD-MTy" secondAttribute="bottom" constant="8" id="5SP-DK-qaP"/>
-                            <constraint firstItem="aNv-k1-Mcy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dJf-vr-naI" secondAttribute="leading" constant="20" id="BnQ-a5-5Ok"/>
-                            <constraint firstItem="ruv-eD-MTy" firstAttribute="leading" secondItem="dJf-vr-naI" secondAttribute="leading" constant="123" id="Jfr-G5-I6j"/>
                             <constraint firstItem="ruv-eD-MTy" firstAttribute="top" secondItem="dJf-vr-naI" secondAttribute="top" constant="80" id="Ni7-EC-z0S"/>
-                            <constraint firstAttribute="trailing" secondItem="ruv-eD-MTy" secondAttribute="trailing" constant="20" id="Vpj-36-fbx"/>
                             <constraint firstItem="aNv-k1-Mcy" firstAttribute="leading" secondItem="dJf-vr-naI" secondAttribute="leading" constant="20" id="YTf-7A-TjA"/>
                             <constraint firstAttribute="trailing" secondItem="aNv-k1-Mcy" secondAttribute="trailing" constant="103" id="hII-Uw-eEd"/>
                             <constraint firstAttribute="bottom" secondItem="aNv-k1-Mcy" secondAttribute="bottom" constant="20" id="hxd-xP-low"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aNv-k1-Mcy" secondAttribute="trailing" constant="20" id="mcK-s3-Y5g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QJT-vi-KMf"/>
